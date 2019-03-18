@@ -7,3 +7,4 @@ This repo contains the lab reports for the Robotics Lab at the University of Mon
 ### Lab 4: Image colour space for object segmentation.
 ### Lab 5: Spatial filtering and edge detection.
 ### Lab 6: Image edge detection using derivative operators.
+### Lab 7: Hough Transform for line detection.
