@@ -1,0 +1,148 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+{Fernandez, L., Avila, V. y Gonçalves, L.}%
+}{%
+{Fernandez, L., Avila, V. y Gonçalves, L.}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+f}
+\APACinsertmetastar {%
+f}%
+\begin{APACrefauthors}%
+{Fernandez, L., Avila, V. y Gonçalves, L.}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {A Generic Approach for Error Estimation of Depth Data from
+  (Stereo and RGB-D) 3D Sensors.} {A generic approach for error estimation of
+  depth data from (stereo and rgb-d) 3d sensors.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.researchgate.net/publication/326518096_A_Generic_Approach_for_Error_Estimation_of_Depth_Data_from_Stereo_and_RGB-D_3D_Sensors}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Kapoor, S.}%
+}{%
+{Kapoor, S.}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+c}
+\APACinsertmetastar {%
+c}%
+\begin{APACrefauthors}%
+{Kapoor, S.}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {An Introduction to Epipolar Geometry.} {An introduction to
+  epipolar geometry.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sanyamkapoor.com/machine-learning/an-introduction-to-epipolar-geometry/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Kiernan, K.}%
+}{%
+{Kiernan, K.}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+a}
+\APACinsertmetastar {%
+a}%
+\begin{APACrefauthors}%
+{Kiernan, K.}%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Camera Obscura World.} {Camera obscura world.}
+\newblock
+\begin{APACrefURL}
+  \url{http://www.donttakepictures.com/dtp-blog/2017/3/15/camera-obscura-world}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{OpenCV}%
+}{%
+{OpenCV}%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+e}
+\APACinsertmetastar {%
+e}%
+\begin{APACrefauthors}%
+{OpenCV}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Camera Calibration and 3D Reconstruction.} {Camera calibration
+  and 3d reconstruction.}
+\newblock
+\begin{APACrefURL}
+  \url{https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{OpenMVG}%
+}{%
+{OpenMVG}%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+d}
+\APACinsertmetastar {%
+d}%
+\begin{APACrefauthors}%
+{OpenMVG}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Pinhole camera model.} {Pinhole camera model.}
+\newblock
+\begin{APACrefURL}
+  \url{https://openmvg.readthedocs.io/en/latest/openMVG/cameras/cameras/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Simon J. D. Prince}%
+}{%
+{Simon J. D. Prince}%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+b}
+\APACinsertmetastar {%
+b}%
+\begin{APACrefauthors}%
+{Simon J. D. Prince}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {Computer Vision: Models, Learning, and Inference} {Computer
+  vision: Models, learning, and inference}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

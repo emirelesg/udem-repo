@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZob{}}
+	\PYG{n+nt}{\PYGZdq{}focal\PYGZus{}length\PYGZdq{}}\PYG{p}{:} \PYG{l+m+mf}{806.818858268}\PYG{p}{,}
+	\PYG{n+nt}{\PYGZdq{}width\PYGZdq{}}\PYG{p}{:} \PYG{l+m+mi}{640}\PYG{p}{,}
+	\PYG{n+nt}{\PYGZdq{}height\PYGZdq{}}\PYG{p}{:} \PYG{l+m+mi}{480}\PYG{p}{,}
+	\PYG{n+nt}{\PYGZdq{}cx\PYGZdq{}}\PYG{p}{:} \PYG{l+m+mi}{320}\PYG{p}{,}
+	\PYG{n+nt}{\PYGZdq{}cy\PYGZdq{}}\PYG{p}{:} \PYG{l+m+mi}{240}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
