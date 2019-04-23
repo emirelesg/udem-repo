@@ -9,3 +9,4 @@ This repo contains the lab reports for the Robotics Lab at the University of Mon
 ### Lab 6: Image edge detection using derivative operators.
 ### Lab 7: Hough Transform for line detection.
 ### Lab 8: Line detection on the Raspberry Pi 3 B+
+### Lab 9: Camera calibration
