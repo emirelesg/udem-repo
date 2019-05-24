@@ -1,9 +1,18 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import numpy as np
 import cv2
 from line import Line
+
 class ImageProcessor():
+    """
+        Implements the computer vision algorithms for detecting lanes in an image.
+    """
 
     def __init__(self, frameDimensions, frameRate):
+
+        # Define camera dimensions.
         self.frameDimensions = frameDimensions
         self.frameRate = frameRate
         self.w = self.frameDimensions[0]
@@ -13,6 +22,7 @@ class ImageProcessor():
         self.roiY = (0.57, 0.71)
         self.roiX = (0.67, 0.95)
 
+        # Initialize the left and right lane classes.
         self.left = Line(self.frameDimensions, (0, 0, 255))
         self.right = Line(self.frameDimensions, (255, 0, 0))
         
@@ -36,6 +46,10 @@ class ImageProcessor():
         self.rectifyMapX, self.rectifyMapY = cv2.initUndistortRectifyMap(self.cameraMatrix, self.distortionCoefficients, None, self.newCameraMatrix, self.frameDimensions, 5)
 
     def doBlur(self, frame, iterations, kernelSize):
+        """
+            Performs a gaussian blur with the set number of iterations.
+        """
+
         blured = frame.copy()
         while iterations > 0:
             blured =  cv2.GaussianBlur(blured, (kernelSize, kernelSize), sigmaX=0, sigmaY=0)
@@ -43,6 +57,11 @@ class ImageProcessor():
         return blured
 
     def doRegionOfInterest(self, frame):
+        """
+            Obtains the region of interest from a frame. The dimensions of the ROI are set by the class
+            properties roiX and roiY.
+        """
+
         y0Px = self.h * self.roiY[0]
         y1Px = self.h * self.roiY[1]
         x0Px = (1 - self.roiX[0]) * self.w / 2
@@ -58,6 +77,11 @@ class ImageProcessor():
         return cv2.bitwise_and(frame, mask)
 
     def findLanes(self, frame, lines, minAngle=10, drawAll=False):
+        """
+            Iterates through the results from the Hough Transform and filters the detected lines into
+            those who belong to the left and right lane. Finally fits the data to a 1st order polynomial.
+        """
+
         self.left.clear()
         self.right.clear()
         if type(lines) == type(np.array([])):
@@ -78,6 +102,10 @@ class ImageProcessor():
         return frame
         
     def drawPoly(self, frame, poly, color, width=3):
+        """
+            Draws a 1-D polynomial into the frame. Uses the roiY for the -y coordinates.
+        """
+
         y0 = self.h * self.roiY[0]
         y1 = self.h * self.roiY[1]
         y0Px = int(y0)
@@ -90,6 +118,10 @@ class ImageProcessor():
             cv2.line(frame, (0, y0Px), (0, y1Px), color, width)     
 
     def process(self, frame):
+        """
+            Main pipeline for detecting lanes on a frame.
+        """
+
         undistort = cv2.remap(frame, self.rectifyMapX, self.rectifyMapY, cv2.INTER_LINEAR)
         gray = cv2.cvtColor(undistort, cv2.COLOR_BGR2GRAY)
         grayColor = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
